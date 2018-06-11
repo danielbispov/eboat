@@ -1,0 +1,10 @@
+#menu-items {
+
+}
+
+#ride-btn:hover {
+    color: #343a40;
+    background-color: transparent;
+    background-image: none;
+    border-color: #343a40;
+}
