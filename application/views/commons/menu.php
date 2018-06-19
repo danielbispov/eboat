@@ -6,13 +6,10 @@
     <div class="collapse navbar-collapse justify-content-end" id="menu-items">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="<?=base_url('index'); ?>">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Sign in</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Sign Up</a>
+                <a class="nav-link" href="<?=base_url('login'); ?>">Sign Up</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">About Eboat</a>
