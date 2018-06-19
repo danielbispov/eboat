@@ -75,7 +75,7 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
+	'hostname' => parse_url(getenv("DATABASE_URL")),
 	'username' => 'root',
 	'password' => 'root',
 	'database' => 'eboat',
