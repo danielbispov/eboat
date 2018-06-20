@@ -3,9 +3,9 @@
     <?php $this->load->view('commons/header');?>
 
     <body>
+    <?php $this->load->view('commons/menu'); ?>
     <div class="container">
-        <?php $this->load->view('commons/menu'); ?>
-
+        <?php  ?>
         <div class="jumbotron bg-transparent">
             <h1 class="display-4">Follow your destiny</h1>
             <p>What are you up to?</p>

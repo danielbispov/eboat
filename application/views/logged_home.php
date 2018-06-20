@@ -7,10 +7,7 @@
     <div class="container">
         <?php  ?>
         <div class="jumbotron bg-transparent">
-            <h1 class="display-4">Follow your destiny</h1>
-            <p>What are you up to?</p>
-            <button class="btn btn-outline-dark">Share boat</button>
-            <button id="ride-btn" class="btn btn-dark">Get a ride</button>
+            <h1 class="display-4">Logged one!!!!</h1>
         </div>
     </div>
 

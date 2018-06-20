@@ -72,18 +72,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $active_group = 'default';
 $query_builder = TRUE;
-$DATABASE_URL = parse_url(getenv("DATABASE_URL"));
+//$DATABASE_URL = parse_url(getenv("DATABASE_URL"));
+//$DATABASE_URL["host"]
+//$DATABASE_URL["user"]
+//$DATABASE_URL["pass"]
+//ltrim($DATABASE_URL["path"]
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => $DATABASE_URL["host"],
-	'username' => $DATABASE_URL["user"],
-	'password' => $DATABASE_URL["pass"],
-	'database' => ltrim($DATABASE_URL["path"], "/"),
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => 'root',
+	'database' => 'eboat',
 	'dbdriver' => 'postgre',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
-	'db_debug' => (ENVIRONMENT !== 'production'),
+	'db_debug' => TRUE,//(ENVIRONMENT !== 'production'),
 	'cache_on' => FALSE,
 	'cachedir' => '',
 	'char_set' => 'utf8',
