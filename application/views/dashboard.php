@@ -64,7 +64,7 @@
                 <div class="tab-content">
 
                     <div class="tab-pane fade show active" id="nav-trips" aria-labelledby="nav-trips-tab" role="tabpanel">
-                        <table class="table">
+                        <table class="table mt-3">
                             <thead>
                             <tr>
                                 <th scope="col">Provider</th>
@@ -72,6 +72,7 @@
                                 <th scope="col">Destination</th>
                                 <th scope="col">Departure</th>
                                 <th scope="col">Cost</th>
+                                <th scope="col"></th>
 
                             </tr>
                             </thead>
@@ -85,7 +86,10 @@
                                     <td>R$ <?php echo $trip_data['cost']; ?></td>
                                     <td>
                                     <?php if($this->session->userdata['id'] != $trip_data['provider_id']):?>
-                                        <button class="btn btn-primary">Buy</button>
+                                        <a role="button" class="btn btn-primary"
+                                                href="<?=base_url('Eboat/new_schedule/'.$this->session->userdata['id']."/".$trip_data['trip_id'])?>">
+                                            Buy
+                                        </a>
                                     <?php endif; ?>
                                     </td>
                                 </tr>
@@ -125,13 +129,8 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="boat">Boat</label>
-                                    <select class="custom-select" id="boat" name="boat">
-                                        <option selected>Choose...</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
+                                    <label for="boat">Boat name</label>
+                                    <input type="text" class="form-control" id="boat" name="boat" placeholder="eg. Maria II">
                                 </div>
 
                                 <button class="btn btn-primary btn-block" type="submit">Create trip</button>
@@ -211,7 +210,8 @@
                                         <td><?php echo $btrip_data['departure']; ?></td>
                                         <td>R$ <?php echo $btrip_data['cost']; ?></td>
                                         <td>
-                                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal_cancel">
+                                            <button role="button"
+                                               class="btn btn-danger" data-toggle="modal" data-target="#modal_cancel">
                                                 Cancel
                                             </button>
                                         </td>
@@ -278,13 +278,8 @@
                                     </div>
                                 </div>
                                 <div class="form-group col-md-8">
-                                    <label for="boat">Boat</label>
-                                    <select class="custom-select" id="upd_boat" name="upd_boat">
-                                        <option selected>Choose...</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
+                                    <label for="boat">Boat name</label>
+                                    <input type="text" class="form-control" id="upd_boat" name="upd_boat" placeholder="eg. Maria II">
                                 </div>
                             </div>
 
@@ -316,7 +311,9 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">No, stop!</button>
-                        <button type="button" class="btn btn-primary">Yes, cancel</button>
+                        <a role="button"
+                           href="<?=base_url('Eboat/delete_schedule/'.$this->session->userdata['id']."/".$btrip_data['trip_id'])?>"
+                           class="btn btn-primary">Yes, cancel</a>
                     </div>
                 </div>
             </div>

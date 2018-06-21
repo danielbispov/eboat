@@ -125,12 +125,23 @@ class Eboat extends CI_Controller {
         );
 
         $result = $this->Eboat_model->update_trip($id, $data);
-        print_r($result);
 
         if(!$result) {
             redirect('dashboard');
         }else {
             redirect('dashboard');
         }
+    }
+
+    public function new_schedule($id, $trip) {
+        $res = $this->Eboat_model->insert_schedule($id, $trip);
+        if(!$res)
+            $error['schedule_exists'] = True;
+        redirect('dashboard');
+    }
+
+    public function delete_schedule($id, $trip) {
+        $this->Eboat_model->delete_schedule($id, $trip);
+        redirect('dashboard');
     }
 }

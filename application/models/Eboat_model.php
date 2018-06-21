@@ -40,14 +40,28 @@ class Eboat_model extends CI_Model {
     }
 
     public function insert_trip($data) {
-        try {
-            $query = $this->db->insert('eboat.trip', $data);
-            if($query == 1)
-                return true;
-            else
-                return false;
-        }catch (Exception $e) {
-            echo $e->getMessage();
+        $query = $this->db->insert('eboat.trip', $data);
+        if($query == 1)
+            return true;
+        else
+            return false;
+    }
+
+    public function insert_schedule($id, $trip) {
+        $data = array(
+            'passenger_id' => $id,
+            'trip_id' => $trip
+        );
+
+        $this->db->where('passenger_id', $id);
+        $this->db->where('trip_id', $trip);
+        $validate = $this->db->get('eboat.schedule');
+
+        if($validate->num_rows() == 1) {
+            return false;
+        } else {
+            $this->db->insert('eboat.schedule', $data);
+            return true;
         }
     }
 
@@ -86,6 +100,12 @@ class Eboat_model extends CI_Model {
     public function delete_trip($id) {
         $this->db->where('trip_id', $id);
         $this->db->delete('eboat.trip');
+    }
+
+    public function delete_schedule($id, $trip) {
+        $this->db->where('trip_id', $trip);
+        $this->db->where('passenger_id', $id);
+        $this->db->delete('eboat.schedule');
     }
 
     public function update_trip($id, $data) {
