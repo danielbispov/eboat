@@ -51,10 +51,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['default_controller'] = "Eboat";
 $route['login'] = "Eboat/login";
-$route['process'] = "Eboat/process_login";
-$route['logged'] = "Eboat/logged_home";
 $route['signup'] = "Eboat/signup";
-$route['index'] = "Eboat";
+$route['dashboard'] = "Eboat/dashboard";
+$route['index'] = "Eboat/index";
 $route['404_override'] = "";
 $route['translate_uri_dashes'] = FALSE;
 

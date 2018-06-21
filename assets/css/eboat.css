@@ -6,8 +6,17 @@
     padding: 32px 0 32px 0;
 }
 
+.table th td {
+    text-align: center;
+}
+
 .nav-item {
     font-weight: 600;
+}
+
+.form-trip {
+    padding: 15px;
+    margin: 0 auto;
 }
 
 .form-signin {

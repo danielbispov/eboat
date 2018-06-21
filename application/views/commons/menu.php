@@ -11,9 +11,12 @@
                 <li class="nav-item">
                     <a class="nav-link" href="<?=base_url('index'); ?>">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="<?=base_url('login'); ?>">Sign In</a>
-                </li>
+                <?php
+                    if(!isset($this->session->userdata['name'])) {
+                        echo "<li class=\"nav-item\">" .
+                            "<a class=\"nav-link\" href=\"" . base_url('login') . "\">Sign In</a>" .
+                            "</li>";
+                    }?>
                 <li class="nav-item">
                     <a class="nav-link" href="#">About Eboat</a>
                 </li>

@@ -5,8 +5,8 @@
         <meta name="description" content="Eboat application common header">
         <meta name="author" content="Daniel Vale, Renan Barroncas, Rodrigo Selistre">
         <title>Eboat</title>
-        <link rel="stylesheet" type="text/css" href="<?=base_url("assets/css/eboat.css")?>">
         <link rel="stylesheet" type="text/css" href="<?=base_url("assets/css/bootstrap.min.css")?>">
+        <link rel="stylesheet" type="text/css" href="<?=base_url("assets/css/eboat.css")?>">
         <script src="<?=base_url("assets/js/jquery-3.3.1.min.js")?>"></script>
         <script src="<?=base_url("assets/js/bootstrap.min.js")?>"></script>
     </head>
