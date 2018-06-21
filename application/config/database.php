@@ -74,10 +74,6 @@ $active_group = 'default';
 $query_builder = TRUE;
 $DATABASE_URL = parse_url(getenv("DATABASE_URL"));
 
-
-
-
-
 $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => $DATABASE_URL["host"],
