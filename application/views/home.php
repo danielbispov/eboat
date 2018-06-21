@@ -5,8 +5,7 @@
     <body>
     <?php $this->load->view('commons/menu'); ?>
     <div class="container">
-        <?php  ?>
-        <div class="jumbotron bg-transparent">
+        <div class="jumbotron bg-transparent mt-3">
             <h1 class="display-4">Follow your destiny</h1>
             <p>What are you up to?</p>
             <button class="btn btn-outline-dark">Share boat</button>

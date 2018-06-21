@@ -3,32 +3,26 @@
 <?php $this->load->view('commons/header');?>
 
 <body>
+<?php $this->load->view('commons/menu'); ?>
 <div class="container">
-    <?php $this->load->view('commons/menu'); ?>
-
     <div class="container">
-        <form class="form-signin">
+        <form action="<?=base_url();?>/Eboat/register_user" method="post" class="form-signin">
             <h2 class="form-signin-heading">Please sign in</h2>
-            <label for="signup_name" class="sr-only">name</label>
-            <input type="text" id="signup_name" class="form-control" placeholder="Full name" autofocus>
+            <label for="name" class="sr-only">name</label>
+            <input type="text" id="name" name="name" class="form-control" placeholder="Full name" autofocus>
 
-            <label for="inputEmail" class="sr-only">Email address</label>
-            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" autofocus>
+            <label for="email" class="sr-only">Email address</label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="Email address" autofocus>
 
-            <label for="inputPassword" class="sr-only">Password</label>
-            <input type="password" id="signup_password" class="form-control" placeholder="Password" >
+            <label for="password" class="sr-only">Password</label>
+            <input type="password" id="password" name="password" class="form-control" placeholder="Password" >
 
             <div>
-                <input type="checkbox" id="signup_type" class="" value="provider">
-                <label for="signup_type" class="">I wish to provide trips</label>
+                <input type="checkbox" id="permission" name="permission">
+                <label for="permission">I wish to provide trips</label>
             </div>
 
-            <div class="sign-up">
-                <label>
-                    <a href="#">Don't have an account? Sign up</a>
-                </label>
-            </div>
-            <button class="btn btn-primary btn-block btn-dark" type="submit">Sign in</button>
+            <button class="btn btn-primary btn-block btn-dark" type="submit">Sign un</button>
         </form>
     </div>
 </div>
