@@ -108,7 +108,7 @@
                                 <div class="form-row">
                                     <div class="form-group col-md-3">
                                         <label for="origin">Origin</label>
-                                        <input type="text" class="form-control" id="origin" name="origin" placeholder="Origin">
+                                        <input type="text" class="form-control" id="origin" name="origin" placeholder="Origin" required>
                                     </div>
                                     <div class="form-group col-md-3">
                                         <label for="destination">Destination</label>
