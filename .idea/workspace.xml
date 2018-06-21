@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e710cec5-45c9-4fee-8eae-8b4570244b98" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/database.php" afterDir="false" />
-    </list>
+    <list default="true" id="e710cec5-45c9-4fee-8eae-8b4570244b98" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,8 +81,8 @@
       <file leaf-file-name="database.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/config/database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="74" selection-start-line="74" selection-end-line="74" selection-end-column="50" />
+            <state relative-caret-position="334">
+              <caret line="89" column="18" selection-start-line="89" selection-start-column="18" selection-end-line="89" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -275,12 +271,12 @@
       <workItem from="1529446344436" duration="15434000" />
       <workItem from="1529532952372" duration="18356000" />
       <workItem from="1529579787136" duration="17804000" />
-      <workItem from="1529606092717" duration="7257000" />
+      <workItem from="1529606092717" duration="7503000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64216000" />
+    <option name="totallyTimeSpent" value="64462000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
@@ -671,8 +667,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="74" selection-start-line="74" selection-end-line="74" selection-end-column="50" />
+        <state relative-caret-position="334">
+          <caret line="89" column="18" selection-start-line="89" selection-start-column="18" selection-end-line="89" selection-end-column="18" />
         </state>
       </provider>
     </entry>
