@@ -34,6 +34,7 @@
         <form action="<?=base_url('Eboat/process_login')?>" method="post" id="login_form" name="login" class="form-signin">
             <?php
             if (isset($this->session->userdata['registered']) and $this->session->userdata['registered'] == true) {
+                $this->session->unset_userdata['registered'];
                 $result='<div class="alert alert-success alert-dismissible fade show">Registered successfully, you can now log in</div>';
                 echo $result;
             }

@@ -35,6 +35,7 @@
         <form action="<?=base_url();?>Eboat/register_user" method="post" id="signup_form" class="form-signin">
             <?php
             if (isset($this->session->userdata['registered']) and $this->session->userdata['registered'] == false) {
+                $this->session->unset_userdata['registered'];
                 $result='<div class="alert alert-danger alert-dismissible fade show">Something went wrong, maybe you already have an account</div>';
                 echo $result;
             }
