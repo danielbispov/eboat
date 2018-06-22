@@ -70,6 +70,8 @@ class Eboat extends CI_Controller {
         $result = $this->Eboat_model->insert_user($data);
 
         if(!$result) {
+            $arr =  array('registered' => 'false');
+            $this->session->set_userdata($arr);
             redirect('signup');
         }else {
             $arr =  array('registered' => 'true');

@@ -7,6 +7,12 @@
 <div class="container">
     <div class="container">
         <form action="<?=base_url();?>Eboat/register_user" method="post" class="form-signin">
+            <?php
+            if (isset($this->session->userdata['registered']) and $this->session->userdata['registered'] == false) {
+                $result='<div class="alert alert-danger alert-dismissible fade show">Something went wrong, maybe you already have an account</div>';
+                echo $result;
+            }
+            ?>
             <h2 class="form-signin-heading">Please sign in</h2>
             <label for="name" class="sr-only">name</label>
             <input type="text" id="name" name="name" class="form-control" placeholder="Full name" autofocus required>
