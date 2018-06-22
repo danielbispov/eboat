@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php $this->load->view('commons/header');?>
-
+<script>
+    $(document).ready(function () {
+        $('#signup_form').validate({
+            rules: {
+                name: {
+                    required: true
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                password: {
+                    required: true,
+                    minlength: 6
+                }
+            },
+            messages: {
+                email: "Please, insert an email.",
+                password: "Please, put a 6 characters minimum password."
+                name: "Please, insert your name";
+            }
+        });
+    });
+</script>
 <body>
 <?php $this->load->view('commons/menu'); ?>
 <div class="container">
     <div class="container">
-        <form action="<?=base_url();?>Eboat/register_user" method="post" class="form-signin">
+        <form action="<?=base_url();?>Eboat/register_user" method="post" id="signup_form" class="form-signin">
             <?php
             if (isset($this->session->userdata['registered']) and $this->session->userdata['registered'] == false) {
                 $result='<div class="alert alert-danger alert-dismissible fade show">Something went wrong, maybe you already have an account</div>';

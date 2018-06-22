@@ -6,15 +6,17 @@
         $('#login_form').validate({
             rules: {
                 email: {
-                    required: true
+                    required: true,
+                    email: true
                 },
                 password: {
-                    required: true
+                    required: true,
+                    minlength: 6
                 }
             },
             messages: {
-                email: "Por favor, coloque o email cadastrado.",
-                password: "Por favor, preecha com sua senha."
+                email: "Please, insert your registered email.",
+                password: "Please, insert your password."
             }
         });
     });
