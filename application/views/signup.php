@@ -3,7 +3,7 @@
 <?php $this->load->view('commons/header');?>
 <script>
     $(document).ready(function () {
-        $('#login_form').validate({
+        $('#signup_form').validate({
             errorClass: "alert alert-danger",
             errorElement: "label",
             rules: {
