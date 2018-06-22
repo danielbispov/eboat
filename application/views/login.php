@@ -4,7 +4,6 @@
 <script>
     $(document).ready(function () {
         $('#login_form').validate({
-            errorClass: 'error help-inline alert alert-warning container',
             rules: {
                 email: {
                     required: true
