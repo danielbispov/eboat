@@ -72,6 +72,8 @@ class Eboat extends CI_Controller {
         if(!$result) {
             redirect('signup');
         }else {
+            $arr =  array('registered' => 'true');
+            $this->session->set_userdata($arr);
             redirect('login');
         }
     }

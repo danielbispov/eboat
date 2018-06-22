@@ -7,6 +7,12 @@
 <div class="container">
     <div class="container">
         <form action="<?=base_url('Eboat/process_login')?>" method="post" name="login" class="form-signin">
+            <?php
+            if (isset($this->session->userdata['registered']) and $this->session->userdata['registered'] == true) {
+                $result='<div class="alert alert-success">Registered successfully, you can now log in</div>';
+                echo $result;
+            }
+            ?>
             <h2 class="form-signin-heading">Please sign in</h2>
 
             <label for="email" class="sr-only">Email address</label>
