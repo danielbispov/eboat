@@ -87,7 +87,7 @@
                                     <td>
                                     <?php if($this->session->userdata['id'] != $trip_data['provider_id']):?>
                                         <a role="button" class="btn btn-primary"
-                                                href="<?=base_url('Eboat/new_schedule/'.$this->session->userdata['id']."/".$trip_data['trip_id'])?>">
+                                                href="<?=base_url('Eboat/new_schedule/'.$this->session->userdata['id']."/".$trip_data['trip_id']);?>">
                                             Buy
                                         </a>
                                     <?php endif; ?>
@@ -104,7 +104,7 @@
 
                         <div class="card mt-3">
 
-                            <form action="<?=base_url('Eboat/register_trip')?>" method="post" name="login" class="form-trip">
+                            <form action="<?=base_url('Eboat/register_trip');?>" method="post" name="login" class="form-trip">
                                 <div class="form-row">
                                     <div class="form-group col-md-3">
                                         <label for="origin">Origin</label>
@@ -251,7 +251,7 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <form action="<?=base_url('Eboat/update_trip/'.$trip_data['trip_id'])?>" method="post" name="login" class="form-trip">
+                        <form action="<?=base_url('Eboat/update_trip/'.$trip_data['trip_id']);?>" method="post" name="login" class="form-trip">
                             <div class="form-row">
                                 <div class="form-group col-md-4">
                                     <label for="origin">Origin</label>
@@ -312,7 +312,7 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">No, stop!</button>
                         <a role="button"
-                           href="<?=base_url('Eboat/delete_schedule/'.$this->session->userdata['id']."/".$btrip_data['trip_id'])?>"
+                           href="<?=base_url('Eboat/delete_schedule/'.$this->session->userdata['id']."/".$btrip_data['trip_id']);?>"
                            class="btn btn-primary">Yes, cancel</a>
                     </div>
                 </div>
