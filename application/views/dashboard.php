@@ -112,11 +112,11 @@
                                     </div>
                                     <div class="form-group col-md-3">
                                         <label for="destination">Destination</label>
-                                        <input type="text" class="form-control" id="destination" name="destination" placeholder="Destination">
+                                        <input type="text" class="form-control" id="destination" name="destination" placeholder="Destination" required>
                                     </div>
                                     <div class="form-group col-md-3">
                                         <label for="departure">Departure</label>
-                                        <input type="date" class="form-control" id="departure" name="departure" placeholder="Departure">
+                                        <input type="text" class="form-control" id="departure" name="departure" required>
                                     </div>
                                     <div class="form-group col-md-3">
                                         <label for="cost">Price</label>
@@ -124,13 +124,13 @@
                                             <div class="input-group-append">
                                                 <span class="input-group-text">R$</span>
                                             </div>
-                                            <input type="number" class="form-control" id="cost" name="cost" placeholder="Price">
+                                            <input type="number" class="form-control" id="cost" name="cost" placeholder="Price" required>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="boat">Boat name</label>
-                                    <input type="text" class="form-control" id="boat" name="boat" placeholder="eg. Maria II">
+                                    <input type="text" class="form-control" id="boat" name="boat" placeholder="eg. Maria II" required>
                                 </div>
 
                                 <button class="btn btn-primary btn-block" type="submit">Create trip</button>
@@ -263,7 +263,7 @@
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label for="departure">Departure</label>
-                                    <input type="date" class="form-control" id="upd_departure" name="upd_departure" value="<?php echo $user_trip['departure'];?>" placeholder="Departure">
+                                    <input type="text" class="form-control" id="upd_departure" name="upd_departure" value="<?php echo $user_trip['departure'];?>">
                                 </div>
                             </div>
 
@@ -285,7 +285,7 @@
 
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                                <button type="sumbit" class="btn btn-primary" href="<?=base_url('Eboat/update_trip/'.$user_trip['trip_id']);?>">Update</button>
+                                <a role="button" class="btn btn-primary" href="<?=base_url('Eboat/update_trip/'.$user_trip['trip_id']);?>">Update</a>
                             </div>
                         </form>
                     </div>

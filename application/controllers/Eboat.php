@@ -70,11 +70,9 @@ class Eboat extends CI_Controller {
         $result = $this->Eboat_model->insert_user($data);
 
         if(!$result) {
-            $res['message'] = "Username might already exist";
-            $this->load->view('signup', $res);
+            redirect('signup');
         }else {
-            $res['message'] = "Successfully registered, log in";
-            $this->load->view('login', $res);
+            redirect('login');
         }
     }
 
