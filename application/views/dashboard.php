@@ -242,7 +242,7 @@
         <?php if(isset($user_trip) and isset($trip_data)): ?>
         <!-- Update modal -->
             <label id="exampleModalCenterTitle">Modal</label>
-        <div class="modal fade" id="modal_update" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal fade" id="modal_update" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content w-100">
                     <div class="modal-header">
@@ -298,7 +298,7 @@
         <?php endif; ?>
 
         <!-- Cancel trip modal -->
-        <div class="modal fade" id="modal_cancel" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal fade" id="modal_cancel" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
