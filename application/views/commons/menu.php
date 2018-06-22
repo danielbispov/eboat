@@ -18,7 +18,7 @@
                             "</li>";
                     }?>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?=base_url('signup'); ?>">Sign Up</a>
+                    <a class="nav-link" title="6 characters minimum" href="<?=base_url('signup'); ?>">Sign Up</a>
                 </li>
             </ul>
         </div>
