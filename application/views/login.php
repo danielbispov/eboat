@@ -5,7 +5,7 @@
     $(document).ready(function () {
         $('#login_form').validate({
             errorClass: "alert alert-danger",
-            errorElement: "span",
+            errorElement: "label",
             rules: {
                 email: {
                     required: true,
