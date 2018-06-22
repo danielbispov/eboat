@@ -12,7 +12,7 @@
             <input type="text" id="name" name="name" class="form-control" placeholder="Full name" autofocus required>
 
             <label for="email" class="sr-only">Email address</label>
-            <input type="email" id="email" name="email" class="form-control" placeholder="Email address" autofocus required>
+            <input type="email" id="email" name="email" class="form-control" placeholder="Email address"  required>
 
             <label for="password" class="sr-only">Password</label>
             <input type="password" id="password" name="password" pattern=".{6,}" class="form-control" placeholder="Password" required>
