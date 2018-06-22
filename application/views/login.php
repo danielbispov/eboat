@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php $this->load->view('commons/header');?>
+<script>
+    $(document).ready(function () {
+        $('#login_form').validate({
+            errorClass: 'error help-inline alert alert-warning container',
+            rules: {
+                email: {
+                    required: true
+                },
+                password: {
+                    required: true
+                }
+            },
+            messages: {
+                email: "Por favor, coloque o email cadastrado.",
+                password: "Por favor, preecha com sua senha."
+            }
+        });
+    });
+</script>
 
 <body>
 <?php $this->load->view('commons/menu'); ?>
 <div class="container">
     <div class="container">
-        <form action="<?=base_url('Eboat/process_login')?>" method="post" name="login" class="form-signin">
+        <form action="<?=base_url('Eboat/process_login')?>" method="post" id="login_form" name="login" class="form-signin">
             <?php
             if (isset($this->session->userdata['registered']) and $this->session->userdata['registered'] == true) {
                 $result='<div class="alert alert-success alert-dismissible fade show">Registered successfully, you can now log in</div>';
@@ -16,10 +35,10 @@
             <h2 class="form-signin-heading">Please sign in</h2>
 
             <label for="email" class="sr-only">Email address</label>
-            <input type="email" id="email" name="email" class="form-control" placeholder="Email address" autofocus required>
+            <input type="email" id="email" name="email" class="form-control" placeholder="Email address" autofocus>
 
             <label for="password" class="sr-only">Password</label>
-            <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
+            <input type="password" id="password" name="password" class="form-control" placeholder="Password">
 
             <div class="sign-up">
                 <label>
