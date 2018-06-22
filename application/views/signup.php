@@ -3,13 +3,11 @@
 <?php $this->load->view('commons/header');?>
 <script>
     $(document).ready(function () {
-        $('#signup_form').validate({
-            errorClass: 'alert alert-danger',
+        $('#login_form').validate({
+            errorClass: "alert alert-danger",
             errorElement: "label",
             rules: {
-                name: {
-                    required: true
-                },
+                name: {required: true},
                 email: {
                     required: true,
                     email: true
@@ -20,9 +18,9 @@
                 }
             },
             messages: {
-                email: "Please, insert an email.",
-                password: "Please, put a 6 characters minimum password."
-                name: "Please, insert your name";
+                name:"Please, insert your name"
+                email: "Please, insert your email.",
+                password: "Please, insert your password."
             },
             highlight: function(element, errorClass) {
                 $(element).removeClass(errorClass);
