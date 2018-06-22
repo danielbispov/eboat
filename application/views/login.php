@@ -19,6 +19,9 @@
             messages: {
                 email: "Please, insert your registered email.",
                 password: "Please, insert your password."
+            },
+            highlight: function(element, errorClass) {
+                $(element).removeClass(errorClass);
             }
         });
     });
