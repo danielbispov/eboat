@@ -39,13 +39,13 @@
             ?>
             <h2 class="form-signin-heading">Please sign in</h2>
             <label for="name" class="sr-only">name</label>
-            <input type="text" id="name" name="name" class="form-control" placeholder="Full name" autofocus required>
+            <input type="text" id="name" name="name" class="form-control" placeholder="Full name" autofocus>
 
             <label for="email" class="sr-only">Email address</label>
-            <input type="email" id="email" name="email" class="form-control" placeholder="Email address"  required>
+            <input type="email" id="email" name="email" class="form-control" placeholder="Email address">
 
             <label for="password" class="sr-only">Password</label>
-            <input type="password" id="password" name="password" pattern=".{6,}" class="form-control" placeholder="Password" required>
+            <input type="password" id="password" name="password" pattern=".{6,}" class="form-control" placeholder="Password">
 
             <div>
                 <input type="checkbox" id="permission" name="permission">
