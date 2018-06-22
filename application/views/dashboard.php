@@ -246,7 +246,7 @@
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content w-100">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Update trip</h5>
+                        <h5 class="modal-title">Update trip</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -302,7 +302,7 @@
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Confirm cancellation</h5>
+                        <h5 class="modal-title">Confirm cancellation</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
