@@ -5,7 +5,6 @@
     $(document).ready(function () {
         $('#signup_form').validate({
             errorClass: "alert alert-danger",
-            errorElement: "label",
             rules: {
                 name: {required: true},
                 email: {
@@ -21,9 +20,6 @@
                 name:"Please, insert your name"
                 email: "Please, insert your email.",
                 password: "Please, insert your password."
-            },
-            highlight: function(element, errorClass) {
-                $(element).removeClass(errorClass);
             }
         });
     });
