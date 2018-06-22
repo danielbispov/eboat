@@ -17,6 +17,9 @@
                             "<a class=\"nav-link\" href=\"" . base_url('login') . "\">Sign In</a>" .
                             "</li>";
                     }?>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?=base_url('signup'); ?>">Sign Up</a>
+                </li>
             </ul>
         </div>
     </div>
