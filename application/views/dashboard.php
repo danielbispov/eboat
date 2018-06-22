@@ -297,7 +297,7 @@
         <?php endif; ?>
 
         <!-- Cancel trip modal -->
-        <div class="modal fade" id="modal_cancel" tabindex="-1" role="dialog" aria-labelledby="aria" aria-hidden="true">
+        <div class="modal fade" id="modal_cancel" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
