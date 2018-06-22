@@ -4,6 +4,7 @@
 <script>
     $(document).ready(function () {
         $('#signup_form').validate({
+            errorClass: 'error alert alert-warning',
             rules: {
                 name: {
                     required: true
