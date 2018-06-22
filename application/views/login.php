@@ -4,7 +4,7 @@
 <script>
     $(document).ready(function () {
         $('#login_form').validate({
-            errorClass: 'error alert alert-warning',
+            errorClass: 'alert alert-warning',
             rules: {
                 email: {
                     required: true,
